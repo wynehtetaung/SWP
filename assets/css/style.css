@@ -1,0 +1,105 @@
+/** for project  start**/
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: title;
+  src: url("/assets/fonts/Roboto.ttf");
+}
+@font-face {
+  font-family: content;
+  src: url("/assets/fonts/Inter.ttf");
+}
+/* @font-face {
+  font-family: test;
+  src: url("/assets/fonts/GrechenFuemen-Regular.ttf");
+} */
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: title;
+}
+.content {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: content;
+}
+.primary {
+  color: #f8fafc;
+}
+.primary-bg {
+  background-color: #f8fafc;
+}
+.secondary {
+  color: #3e3636;
+}
+.secondary-bg {
+  background-color: #3e3636;
+}
+.light-periwinkle {
+  color: #bcccdc;
+}
+.light-periwinkle-bg {
+  background-color: #bcccdc;
+}
+.cadet-grey {
+  color: #9aa6b2;
+}
+.cadet-grey-bg {
+  background-color: #9aa6b2;
+}
+.floral-white {
+  color: #fef9f1;
+}
+.floral-white-bg {
+  background-color: #fef9f1;
+}
+
+/** for project end **/
+
+/** testing **/
+.container {
+  height: 100vh;
+  width: 100%;
+  /* background: #e1e1e1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  color: rgba(143, 81, 229, 0.933);
+  margin-bottom: 15px;
+  font-family: title;
+}
+.container h2 {
+  margin: 10px 0px;
+  color: #5212ab;
+  text-decoration: underline;
+}
+.container p {
+  font-family: content;
+  color: #5212ab;
+  font-weight: bold;
+  margin-top: 5px;
+  cursor: pointer;
+  background: #c375f4;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #3e3e3e;
+  user-select: none;
+  margin-bottom: 20px;
+}
+.container p:hover {
+  font-size: 18px;
+  color: rgb(103, 27, 124);
+}
+.container a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: content;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
