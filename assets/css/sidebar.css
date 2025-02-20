@@ -39,6 +39,17 @@ body {
   color: white;
 }
 
+/* Keep the color after clicking */
+.sidebar a:active{
+  background-color:  #3e3636;
+  color: white;
+}
+
+.sidebar a:focus{
+  background-color: #3e3636;
+  color: white;
+}
+
 /* for main section */
 
 .main {
