@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: title;
+  src: url("/assets/fonts/Roboto.ttf");
+}
+@font-face {
+  font-family: content;
+  src: url("/assets/fonts/Inter.ttf");
+}
+
 body {
   margin: 0;
   display: flex;
