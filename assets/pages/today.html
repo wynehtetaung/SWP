@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today</title>
+    <link rel="stylesheet" href="/assets/css/sidebar.css" />
+    <link rel="stylesheet" href="/assets/css/list.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/listAddBox.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Today</title>
-  <link rel="stylesheet" href="/assets/css/sidebar.css" />
-  <link rel="stylesheet" href="/assets/css/list.css" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
+  <body>
+    <div class="all">
+      <div class="sidebar floral-white-bg">
+        <img src="/assets/icons/Logo.svg" />
+        <ul>
+          <li><a href="all.html">All</a></li>
+          <li><a href="upcoming.html">Upcoming</a></li>
+          <li><a href="today.html">Today</a></li>
+          <li><a href="complete.html">Completed</a></li>
+          <li><a href="unfinished.html">Unfinished</a></li>
+        </ul>
+      </div>
 
-<body>
-  <div class="all">
-    <div class="sidebar floral-white-bg">
-      <img src="/assets/icons/Logo.svg" />
-      <ul>
-        <li><a href="all.html">All</a></li>
-        <li><a href="upcoming.html">Upcoming</a></li>
-        <li><a href="today.html">Today</a></li>
-        <li><a href="complete.html">Completed</a></li>
-        <li><a href="unfinished.html">Unfinished</a></li>
-      </ul>
+      <div>
+        <div class="content-list">
+          <h1 class="title-list">Today</h1>
+          <div class="date">9 February 2025</div>
+          <hr />
+          <ul class="task-list">
+            <li class="task-item">
+              <input type="checkbox" />
+              <span>to do homework</span>
+              <div class="actions">
+                <button>
+                  <img src="/assets/icons/palette-solid.svg" alt="Edit" />
+                </button>
+                <button>
+                  <img src="/assets/icons/trash-solid.svg" alt="Delete" />
+                </button>
+              </div>
+            </li>
+            <li class="task-item" style="background-color: #d0ffc3">
+              <input type="checkbox" />
+              <span>to do homework</span>
+              <div class="actions">
+                <button>
+                  <img src="/assets/icons/palette-solid.svg" alt="Edit" />
+                </button>
+                <button>
+                  <img src="/assets/icons/trash-solid.svg" alt="Delete" />
+                </button>
+              </div>
+            </li>
+            <li class="task-item" style="background-color: #fbedc7">
+              <input type="checkbox" />
+              <span>to do homework</span>
+              <div class="actions">
+                <button>
+                  <img src="/assets/icons/palette-solid.svg" alt="Edit" />
+                </button>
+                <button>
+                  <img src="/assets/icons/trash-solid.svg" alt="Delete" />
+                </button>
+              </div>
+            </li>
+            <li class="task-item" style="background-color: #f6c6c6">
+              <input type="checkbox" />
+              <span>to do homework</span>
+              <div class="actions">
+                <button>
+                  <img src="/assets/icons/palette-solid.svg" alt="Edit" />
+                </button>
+                <button>
+                  <img src="/assets/icons/trash-solid.svg" alt="Delete" />
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--This is list add box-->
+        <div class="creatbox">
+          <ul class="addlist">
+            <li>
+              <input type="text" id="fname" name="fname" class="addInputBox" />
+              <button type="button" class="addbtn">Add</button><br />
+            </li>
+            <li>
+              <label for="schedules">Schedules</label>
+              <input type="date" id="schedules" name="schedules" />
+              <button class="closeButton" type="button" data-close>x</button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <div class="content-list">
-      <h1 class="title-list">Today</h1>
-      <div class="date">9 February 2025</div>
-      <hr>
-      <ul class="task-list">
-        <li class="task-item">
-          <input type="checkbox">
-          <span>to do homework</span>
-          <div class="actions">
-            <button><img src="/assets/icons/palette-solid.svg" alt="Edit"></button>
-            <button><img src="/assets/icons/trash-solid.svg" alt="Delete"></button>
-          </div>
-        </li>
-        <li class="task-item" style="background-color: #D0FFC3;">
-          <input type="checkbox">
-          <span>to do homework</span>
-          <div class="actions">
-            <button><img src="/assets/icons/palette-solid.svg" alt="Edit"></button>
-            <button><img src="/assets/icons/trash-solid.svg" alt="Delete"></button>
-          </div>
-        </li>
-        <li class="task-item" style="background-color: #FBEDC7;">
-          <input type="checkbox">
-          <span>to do homework</span>
-          <div class="actions">
-            <button><img src="/assets/icons/palette-solid.svg" alt="Edit"></button>
-            <button><img src="/assets/icons/trash-solid.svg" alt="Delete"></button>
-          </div>
-        </li>
-        <li class="task-item" style="background-color: #F6C6C6;">
-          <input type="checkbox">
-          <span>to do homework</span>
-          <div class="actions">
-            <button><img src="/assets/icons/palette-solid.svg" alt="Edit"></button>
-            <button><img src="/assets/icons/trash-solid.svg" alt="Delete"></button>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</body>
-
+  </body>
+  <script src="/assets/javascript/today.js"></script>
 </html>

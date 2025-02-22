@@ -1,0 +1,44 @@
+/** for listAddBox**/
+.inputdate {
+  margin: 20px;
+}
+.addInputBox {
+  margin: 10px;
+  width: 300px;
+  height: 20px;
+}
+.creatbox {
+  background-color: #bcccdc;
+  margin-top: 145px;
+  padding-top: 10px;
+  width: 1006px;
+  height: 115px;
+  margin-left: 242px;
+  padding-left: 20px;
+}
+label {
+  margin-left: 10px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+.closeButton {
+  margin-left: 700px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  background-color: rgb(78, 71, 71);
+  color: black;
+}
+.closeButton:hover {
+  background: gray;
+}
+.addlist {
+  list-style: none;
+  padding: 0;
+}
+.addbtn {
+  width: 45px;
+  height: 25px;
+}
