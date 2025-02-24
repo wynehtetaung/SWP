@@ -7,9 +7,10 @@
   width: 300px;
   height: 20px;
 }
-.creatbox {
+.create-box {
   background-color: #bcccdc;
-  margin-top: 145px;
+  margin-top: 90px;
+  margin-bottom: 20px;
   padding-top: 10px;
   width: 1006px;
   height: 115px;
@@ -38,7 +39,7 @@ label {
   list-style: none;
   padding: 0;
 }
-.addbtn {
+.add-btn {
   width: 45px;
   height: 25px;
 }
