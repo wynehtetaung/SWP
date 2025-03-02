@@ -7,9 +7,9 @@ const schedule = document.querySelector("#schedules");
 const addButton = document.querySelector(".add-btn");
 const showList = document.querySelector(".show-list");
 const showBox = document.querySelector(".box");
-const taskList = document.querySelector(".task-list");
 
 const date = new Date(Date.now());
+console.log(date);
 const months = [
   "January",
   "February",
@@ -36,6 +36,7 @@ if (checkDb === null) {
 }
 
 // Date format
+console.log(date.getMonth());
 const dateFormat = `${date.getDate()} ${
   months[date.getMonth()]
 } ${date.getFullYear()}`;
@@ -66,33 +67,10 @@ addButton.addEventListener("click", () => {
     time: schedule.value,
     status: false,
   };
+  console.log(schedule.value);
 
   const oldData = JSON.parse(localStorage.getItem("swpData"));
   oldData.push(jobData);
   localStorage.setItem("swpData", JSON.stringify(oldData));
-  location.reload();
-});
-
-// get data & today data show
-
-const todayDate = `${date.getFullYear()}-${
-  date.getMonth() + 1 > 9 ? date.getMonth() + 1 : "0" + (date.getMonth() + 1)
-}-${date.getDate()}`;
-const getData = JSON.parse(localStorage.getItem("swpData"));
-const todayData = getData.filter((td) => td.time === todayDate);
-todayData.map((data) => {
-  const listStr = `<li class="task-item">
-              <input type="checkbox" />
-              <span>${data.job}</span>
-              <div class="actions">
-                <button>
-                  <img src="/assets/icons/palette-solid.svg" alt="Edit" />
-                </button>
-                <button>
-                  <img src="/assets/icons/trash-solid.svg" alt="Delete" />
-                </button>
-              </div>
-            </li>`;
-
-  taskList.innerHTML += listStr;
+  // location.reload();
 });

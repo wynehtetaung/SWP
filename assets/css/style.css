@@ -105,15 +105,14 @@
   padding-top: 45px;
 }
 
-.date {
-  color: #666;
-  margin-bottom: 20px;
-  display: flex;
-}
-
-/* .show {
-  display: block;
-} */
 .hide {
   display: none;
+}
+
+.date-total {
+  display: flex;
+}
+p .date {
+  color: #666;
+  margin-bottom: 20px;
 }

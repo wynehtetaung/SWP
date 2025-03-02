@@ -50,6 +50,11 @@ body {
   color: #333;
   font-weight: bold;
   padding-top: 45px;
+  text-decoration: none;
+}
+
+.line {
+  text-decoration: line-through;
 }
 
 .date {

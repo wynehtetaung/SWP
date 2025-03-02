@@ -12,15 +12,30 @@ if (checkDb === null) {
 const getData = JSON.parse(localStorage.getItem("swpData"));
 taskListCount.innerHTML = `${getData.length} items`;
 getData.map((data) => {
-  const taskListStr = `
-              <li class="task-item">
+  const taskListStr =
+    data.status === true
+      ? `
+              <li class="task-item" id=${data.id}>
+            <input type="checkbox" checked/>
+            <span>${data.job}</span>
+            <div class="actions">
+              <button>
+                <img src="/assets/icons/palette-solid.svg" alt="Edit" />
+              </button>
+              <button class="delete">
+                <img src="/assets/icons/trash-solid.svg" alt="Delete" />
+              </button>
+            </div>
+          </li>`
+      : `
+              <li class="task-item" id=${data.id}>
             <input type="checkbox" />
             <span>${data.job}</span>
             <div class="actions">
               <button>
                 <img src="/assets/icons/palette-solid.svg" alt="Edit" />
               </button>
-              <button>
+              <button class="delete">
                 <img src="/assets/icons/trash-solid.svg" alt="Delete" />
               </button>
             </div>
